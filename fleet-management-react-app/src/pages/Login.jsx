@@ -1,4 +1,4 @@
-import { useState, useRef,useEffect } from "react";\
+import { useState, useRef,useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Login = ({setIsAuth}) => {
@@ -24,8 +24,11 @@ const Login = ({setIsAuth}) => {
   return (
     <div>
     <h2>Login Page</h2>
+    <br /><br />
     <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} ref={emailRef} />
+    <br /><br />
     <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+    <br /><br />
     <button onClick={handleLogin}>Login</button>
     </div>
 
